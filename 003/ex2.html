@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <style>
+        :root {
+            --box-border-size: 3px
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: #7A7776;
@@ -70,36 +74,35 @@
         }
 
         .row div {
-            width: 60px;
-            height: 60px;
+            height: 50px;
+            aspect-ratio: 1;
         }
 
         ._1, ._2, ._3 {
-            border-bottom: 5px solid #4B9D91;
+            border-bottom: var(--box-border-size) solid #4B9D91;
         }
 
         ._4, ._5, ._6 {
-            border-top: 5px solid #4B9D91;
-            border-bottom: 5px solid #4B9D91;
+            border-top: var(--box-border-size) solid #4B9D91;
+            border-bottom: var(--box-border-size) solid #4B9D91;
         }
 
         ._7, ._8, ._9 {
-            border-top: 5px solid #4B9D91;
+            border-top: var(--box-border-size) solid #4B9D91;
         }
 
         ._1, ._4, ._7 {
-            border-right: 5px solid #4B9D91;
+            border-right: var(--box-border-size) solid #4B9D91;
         }
 
         ._2, ._5, ._8 {
-            border-left: 5px solid #4B9D91;
-            border-right: 5px solid #4B9D91;
+            border-left: var(--box-border-size) solid #4B9D91;
+            border-right: var(--box-border-size) solid #4B9D91;
         }
 
         ._3, ._6, ._9 {
-            border-left: 5px solid #4B9D91;
+            border-left: var(--box-border-size) solid #4B9D91;
         }
-
 
         .bottom {
             color: #59B9AB;
